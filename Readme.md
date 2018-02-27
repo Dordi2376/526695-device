@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Вадим Ульяненков](https://up.htmlacademy.ru/htmlcss/20/user/526695).
-* Наставник: [Дмитрий Селиванов](https://htmlacademy.ru/profile/dmitrii_selivanov).
+* Наставник: [Дмитрий Селиванов ](https://htmlacademy.ru/profile/dmitrii_selivanov).
 
 ---
 
