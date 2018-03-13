@@ -6,20 +6,20 @@
   </head>
   <body>
    <header class="main-header">
-   	<h1 class="main-caption">
-   	   Device
-   </h1>
+   	<h1 class="main-caption">Device</h1>
    	<form action="https://echo.htmlacademy.ru" method="post" class="main-form-search">
          <input type="search" name="field-search" placeholder="Поиск по сайту" class="search-field-for-form">
          <input type="submit" name="submit-main-form" value="Найти">
     </form>
      <section class="section section-for-user">
+      <h1 class="visually-hidden">Раздел для пользователя</h1>
      	<ul class="function-for-user">
      		<li><a href="#" class="enter"><svg xmlns="http://www.w3.org/2000/svg" width="13" height="12" viewBox="0 0 13 12"><path fill="#272525" d="M.032 12h12.937c-.163-2.643-2.074-4.837-4.671-5.543a3.47 3.47 0 0 0 1.687-2.972 3.485 3.485 0 0 0-6.97 0c0 1.264.68 2.361 1.688 2.972C2.106 7.163.194 9.357.032 12z"/></svg>Войти</a></li>
      		<li><a href="#" class="compare"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10"><path d="M8 2h1.984v8H8zM0 3h1.984v7H0zM4 0h2v10H4z"/></svg>Сравнить</a></li>
      		<li><a href="#" class="basket"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12"><path d="M11.864 3.017a.429.429 0 0 0-.327-.154H9.225V4.09c0 .563-.484 1.022-1.08 1.022-.594 0-1.078-.458-1.078-1.022V2.863H4.909V4.09c0 .563-.485 1.022-1.08 1.022-.595 0-1.078-.458-1.078-1.022V2.863H.438a.43.43 0 0 0-.327.154.472.472 0 0 0-.108.358l.776 7.134c.015.806.642 1.455 1.411 1.455h7.595c.77 0 1.396-.649 1.411-1.455l.776-7.134a.476.476 0 0 0-.108-.358z"/><path d="M3.829 4.499c.239 0 .433-.184.433-.409V1.84c0-.632.672-1.022 1.295-1.022h1.079c.655 0 1.078.401 1.078 1.022v2.25c0 .225.194.409.431.409.239 0 .433-.184.433-.409V1.84C8.577.773 7.761 0 6.636 0H5.557c-1.19 0-2.159.826-2.159 1.84v2.25c0 .225.194.409.431.409z"/></svg>Корзина</a></li>
      	</ul>
-     	<nav class="main-nav">
+     	<nav class="main-nav" aria-label="Основная навигация">
+        <h1 class="visually-hidden">Основная навигация по сайту</h1>
      		<ul class="list-navigation">
      			<li>
      				<a href="catalog.html">Каталог товаров</a>
@@ -113,6 +113,7 @@
    			</div>
    		</section>
         <section class="item-list container">
+          <h1 class="visually-hidden">Категории товаров</h1>
         	<ul class="type-item-list">
         		<li class="type-link virtual">
               <span class="visually-hidden">Виртуальная реальность</span>
@@ -189,6 +190,7 @@
          	</div>
          </section>
          <section class="partners container">
+          <h1 class="visually-hidden">Наши партнеры</h1>
          	<ul class="partners-list">
          		<li class="ourpartners dji">
          			<a href="#">
@@ -292,6 +294,7 @@
    	</section>
    </footer>
    <section class="write-us-block">
+    <h1 class="visually-hidden">Форма: напишите нам</h1>
     <button type="button" class="close-btn" aria-label="Кнопка-закрыть"></button>
       <form action="https://echo.htmlacademy.ru" method="post" class="write-us-form">
           <label class="write-us-name">
@@ -302,7 +305,7 @@
             <input type="text" name="e-mail" placeholder="Для отправки ответа">
           </label>
           <label class="write-us-letter" for="write-us-letter">
-            <textarea name="letter" id="write-us-text" cols="60" rows="10" placeholder="В свободной форме" ></textarea>
+            <textarea name="letter" id="write-us-letter" cols="60" rows="10" placeholder="В свободной форме" ></textarea>
           </label>
           <button class="write-us-send-btn" type="submit">Отправить</button>
       </form>
