@@ -1,13 +1,15 @@
 @font-face{
 	font-family: "Gilroy-ExtraBold";
-	src: url("fonts/Gilroyextrabold.ttf") format("woff2");
+	src: url("../font/gilroyextrabold.woff2") format("woff2");
+	src: url("../font/gilroyextrabold.woff") format("woff");
 	font-style: normal;
 	font-weight: normal;
 }
 
 @font-face{
 	font-family: "Open Sans Light";
-    src: url("fonts/OpenSans-Light.ttf") format("woff2");
+   src: url("../font/opensanslight.woff2") format("woff2");
+   src: url("../font/opensanslight.woff") format("woff");
     font-style: normal;
     font-weight: normal;
 }
@@ -15,9 +17,17 @@
 
 @font-face{
 	font-family: "Gilroy-light";
-	src: url("fonts/Gilroylight.ttf") format("woff2");
+	src: url("../font/gilroylight.woff2") format("woff2");
+	src: url("../font/gilroylight.woff") format("woff");
 	font-style: normal;
 	font-weight: normal;
+}
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
 }
 
 body{
@@ -25,26 +35,75 @@ body{
 }
 .main-header{
 	background-color: #f7e296;
+
 }
  .main-caption{
     font-size: 48px;
     color: #000;
     letter-spacing: 0.01em;
-    font-family: "Gilroy-ExtraBold","Arial", sans-serif;   
+    font-family: "Gilroy-ExtraBold","Arial", sans-serif; 
+    display: block;
+    position: absolute;
+    top: -30px;
+    left: 57px;
+    z-index: 0;  
 }
  
-}
+
 .function-for-user li {
 	text-decoration: none;
 	font-size: 15px;
-
+	list-style-type: none;
 }
 .function-for-user a{
 	text-decoration: none;
 	color: #000;
 	font-family: "Open Sans Light","Arial", sans-serif; 
 }
-
+header{
+	outline: 2px solid red;
+	position: relative;
+    min-height: 299px;
+    margin-top: 40px;
+    padding-top: 34px;
+    width: 1160px;
+    margin-left: 140px;
+    min-height: 300px;
+    
+}
+/*content v hedere*/
+.section-for-user{
+	outline: 5px solid orange;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    -ms-align-items: flex-start;
+    align-items: flex-start;
+    height: 500px;
+    padding: 0;
+}
+.fnc-for-user{
+    outline: 2px solid pink;
+    margin: 0 0 0 1000px;
+    padding: 0;
+     margin: 0;
+}
+.fnc-for-user ul .enter{
+     position: absolute;
+     right: 491px;
+}
+.main-nav{
+	outline: 2px solid black;
+}
+.nav-services{
+	outline: 2px solid blue;
+}
+/*content v hedere*/
 
 .list-navigation, 
 .products-catalog{
@@ -287,14 +346,12 @@ body{
 	font-size: 18px;
 	letter-spacing: .2em;
 }
-.thing-item 
-.in-basket{
+.thing-item .in-basket{
 	font-size: 24px;
 	letter-spacing: .2em;
 	line-height: 24px;
 }
-.thing-item
-.upload-to-compair{
+.thing-item .upload-to-compair{
 	font-size: 13px;
 	line-height: 36px;
 	letter-spacing: 0.01em;
