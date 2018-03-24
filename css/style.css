@@ -126,8 +126,8 @@ body{
 	position: absolute;
 	right: 59px;
 }
-section.brecelet,section.drone{
-	display: none;
+.slider .slide:not(:first-child){
+    display: none;
 }
 .slider ul{
 	list-style-type: none;
@@ -328,9 +328,8 @@ ul.details li:nth-child(3) .type{
 	display: -ms-flex;
 	display: -o-flex;
 	display: flex;
-	justify-content: space-around;
-	margin-top: 330px;
-	margin-bottom: 100px;
+	justify-content: space-between;
+	padding: 0;
 
 }
 ul.type-item li{
@@ -435,12 +434,22 @@ section.partners{
     width: 260px;
     margin-right: 40px;
 }
+/*
 .about-company{
 	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
 	display: -o-flex;
 	display: flex;
+}
+*/
+.about-company {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-us, .contacts {
+    width: 560px;
 }
 /*main-footer*/
 .foot{
@@ -508,11 +517,11 @@ section.partners{
 }
 
 .form-filter {
-  flex: 0 0 468px; // вместо 320px возьми ширину из макета
+  flex: 0 0 468px; 
 }
 
 .catalog-body {
-  flex: 0 0 973px; // вместо 830рх возьми ширину из макета
+  flex: 0 0 973px; 
 }
 
 .content-items {
@@ -521,13 +530,13 @@ section.partners{
 }
 
 .thing-item {
-  flex: 0 0 361px; // вместо 360px возьми ширину из макета. Горизонтальный промежуток в 40px между элементами будет за счёт того, что сумма ширин двух элементов в строке меньше ширины их родителя на 40px
-  margin-top: 40px; // вертикальный отступ между товарами
+  flex: 0 0 361px;  
+  margin-top: 40px; 
 }
 
 .thing-item:first-child,
 .thing-item:nth-child(2) {
-  margin-top: 0; // уберём вертикальный отступ для товаров в первой строке
+  margin-top: 0; 
 }
 
 .list-navigation, 
@@ -595,60 +604,33 @@ section.partners{
  	letter-spacing: 4px;
  	text-decoration: none;
  }
- .type-item-list{
- 	width: 1160px;
- }
- .type-item-list li{
-    text-align: center;
-    line-height: 10px;
-    width: 161px;
-    height: 161px;
+ 
+.type-item-list {
+    display: flex;
+    justify-content: space-between; 
+}
+
+.type-item-list li {
+    width: 160px; 
+    list-style-type: none;
+}
+.type-item-list li h3{
+	font-family: "Gilroy-ExtraBold","Arial", sans-serif;
+	font-size: 18px;
+}
+
+.type-link-image-wrapper {
+    background-color: #f7e296;
+    height: 160px; 
+    margin-bottom: 20px; 
     display: -webkit-flex;
     display: -moz-flex;
     display: -ms-flex;
     display: -o-flex;
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    list-style-type: none;
-	background-color: #f7e296;
- }
- .type-item-list li a{
- 	text-align: center;
- 	vertical-align: middle;
- }
-.type-item-list p{
-	letter-spacing: 0.01em;
-	font-size: 18px;
-	color: #000;
-	line-height: 24px;
-}
-.type-item-list li svg{
-	padding-top: 43px;
-}
-.type-item-list li:nth-child(1) p{
-    padding-top: 70px;
-    padding-right: 35px;
-}
-.type-item-list li:nth-child(2) p{
-    padding-top: 10px;
-    padding-right: 45px;
-}
-.type-item-list li:nth-child(3) p{
-    padding-top: 40px;
-    padding-left: 0px;
-}
-.type-item-list li:nth-child(4) p{
-    padding-top: 65px;
-    padding-right: 60px;
-}
-.type-item-list li:nth-child(5) p{
-    padding-top: 35px;
-    padding-right: 35px;
-}
-.type-item-list li:nth-child(6) p{
-    padding-top: 60px;
-    padding-right: 35px;
+    justify-content: center;
+    -ms-align-items: center;
+    align-items: center;
 }
 .services{
 	background-color: #e5e5e5;

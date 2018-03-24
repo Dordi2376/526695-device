@@ -64,6 +64,7 @@
           <fieldset class="price">
             <legend>Стоимость</legend>
             <input type="range" name="price-range-input" id="price-range">
+            <span>От 0</span>
             <span>До 5000</span>
           </fieldset>
           <fieldset class="color">
@@ -134,110 +135,19 @@
               <a href="#" class="thing-name">Селфи палка Следуй за мной</a>
               <span class="thing-price">4900руб.</span>
              </div>
-                   <ul class="main-elements-nav">
+      </div>
+            <div class="main-elements-navigation">
+                   <ul class="elements-slider">
                     <li class="back-btn"><a href="#">Назад</a></li>
                     <li><span>1</span></li>
                     <li><a href="#">2</a></li>
                     <li><a href="#">3</a></li>
                     <li class="next-btn"><a href="#">Вперед</a></li>
                    </ul>
-    </div>
-  </div>
+            </div>
+      </div>
 </div>
-    <!---
-   	<section class="filters-sorter">
-   		<h2 class="filter">ФИЛЬТР:</h2>
-   		<div class="general-block">
-   			<h2 class="sorting">СОРТИРОВКА:</h2>
-   			<ul class="catalog-sorting">
-   			<li>
-   				<span class="sorting-inside price">По цене</span>
-   			</li>
-   				<li>
-   					<a href="#" class="sorting-inside type">По типу</a>
-   				</li>
-   				<li>
-   					<a href="#" class="sorting-inside popular"> По популярности</a>
-   				</li>
-   			</ul>
-   			<ul class="catalog-sorting-slider">
-   				<li><a href="#" class="up btn"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 0L0 10h11z"/></svg></a></li>
-   				<li><a href="#" class="down btn"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 10L0 0h11"/></svg></a></li>
-   			</ul>
-   		</div>
-   	</section>
-   	<section class="main-elements container">
-      <h1 class="visually-hidden">Фильтр товаров</h1>
-   		<div class="content-block">
-   			<div class="form-filter">
-   				 <form action="https://echo.htmlacademy.ru" method="get" class="filter-for-user">
-          <fieldset class="price">
-            <legend>Стоимость</legend>
-            <input type="range" name="price-range-input" id="price-range">
-            <span>От 0</span>
-            <span>До 5000</span>
-          </fieldset>
-          <fieldset class="color">
-            <legend>Цвет</legend>
-            <input type="checkbox" name="color-input" id="color-black"> <label for="color-black">Черный</label>
-            <input type="checkbox" name="color-input" id="color-white"> <label for="color-white">Белый</label>
-            <input type="checkbox" name="color-input" id="color-blue">  <label for="color-blue">Синий</label>
-            <input type="checkbox" name="color-input" id="color-red">   <label for="color-red">Красный</label>
-            <input type="checkbox" name="color-input" id="color-pink">  <label for="color-pink">Розовый</label>
-          </fieldset>
-          <fieldset class="bluetooth">
-            <legend>Bluetooth</legend>
-            <input type="radio" name="filter-radio-btn" id="btn-yes"  value="Есть"> <label for="btn-yes">Есть</label>
-            <input type="radio" name="filter-radio-btn" id="btn-no"   value="Нет">   <label for="btn-no">Нет</label>
-          </fieldset>
-          <button class="show btn" type="button">Показать</button>
-           </form>
-   			</div>
-   			<div class="content-items">
-   				   <div class="thing-item">
-   				   	 <img src="img/selfie-stick1.png" alt="Любительская селфи палка" width="360" height="380">
-   				   	 <button class="in-basket" type="button">В корзину</button>
-               <button type="button" class="upload-to-compair">Добавить к сравнению</button>
-   				   	 <a href="#" class="thing-name">Любительская селфи-палка</a>
-   				   	 <span class="thing-price">500руб.</span>
-   				   </div>
-
-
-   				   <div class="thing-item">
-   				   	<img src="img/selfie-stick2.png" alt="Профессиональная селфи палка" width="360" height="380">
-              <button class="in-basket" type="button">В корзину</button>
-   				   	<button type="button" class="upload-to-compair">Добавить к сравнению</button>
-   				   	<a href="#" class="thing-name">Профессиональная селфи-палка</a>
-   				   	<span class="thing-price">1500руб.</span>
-   				   </div>
-
-   				   <div class="thing-item">
-   				   	<img src="img/selfie-stick3.png" alt="Непотопляемая селфи-палка" width="360" height="380">
-   				   	<button class="in-basket" type="button">В корзину</button>
-              <button type="button" class="upload-to-compair">Добавить к сравнению</button>
-   				   	<a href="#" class="thing-name">Непотопляемая селфи-палка</a>
-   				   	<span class="thing-price">2500руб.</span>
-   				   </div>
-
-   				   <div class="thing-item new">
-   				   	<img src="img/selfie-stick4.png" alt="Селфи палка Следуй за мной" width="360" height="380">
-   				   	<button class="in-basket" type="button">В корзину</button>
-              <button type="button" class="upload-to-compair">Добавить к сравнению</button>
-   				   	<a href="#" class="thing-name">Селфи палка Следуй за мной</a>
-   				   	<span class="thing-price">4900руб.</span>
-   				   </div>
-                   <ul class="main-elements-nav">
-                   	<li class="back-btn"><a href="#">Назад</a></li>
-                   	<li><span>1</span></li>
-                   	<li><a href="#">2</a></li>
-                   	<li><a href="#">3</a></li>
-                   	<li class="next-btn"><a href="#">Вперед</a></li>
-                   </ul>
-   			</div>
-   		</div>
-   	</section>
-   -->
- 
+    
    </main>
    	<footer class="main-footer">
    	<section class="foot container">
