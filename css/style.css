@@ -138,6 +138,7 @@ section.brecelet,section.drone{
 	min-width: 1162px;
 	margin: 0 auto;
 }
+/*
 .items{
 	display: -webkit-flex;
 	display: -moz-flex;
@@ -207,16 +208,120 @@ ul.details li:nth-child(3) .type{
 	left: 900px;
 	top: 375px;
 }
-.main-description .more-info{
-    position: absolute;
-    right: 380px;
-    top: 235px;
-    font-size: 18px;
-    font-family: "Gilroy-ExtraBold","Arial", sans-serif;
+*/
+/*
+.items{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	-ms-align-items: center;
+	align-items: center;
+	outline: 1px solid blue;
+	height: 469px;
+	margin-top: -110px;
 }
-.item-list{
+.main-description h2{
+	padding-right: 80px;
+	padding-bottom: 50px;
+}
+.items .big-number{
+ 	display: -webkit-flex;
+ 	display: -moz-flex;
+ 	display: -ms-flex;
+ 	display: -o-flex;
+ 	display: flex;
+ 	outline: 1px solid black;
+ 	width: 0px;
+ 	height: 0px;
+ 	padding-left: 300px;
+ 	
+ 	color: #fff;
+}
+.items img{
+	padding-bottom: 115px;
+	padding-left: 91px;
+}
+.items .main-description{
+    padding-right: 75px;
+    padding-bottom: 295px;
+    position: relative;
+}
+.items .main-description p{
+	width: 600px;
+	line-height: 5px;
+}
+.caption-description{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	outline: 1px solid green;
+	flex-direction: column;
+	height: 150px;
+	position: absolute;
+	top: 370px;
+}
 
+.main-description .slide-params{
+    margin-top: auto;
 }
+*/
+/**/
+    .slider {
+        margin-top: -110px;
+        margin-bottom: 50px;
+        margin-right: 70px;
+    }
+    .slide-header{
+    	font-size: 48px;
+
+    }
+
+    .slide {
+        display: flex;
+        justify-content: space-around;
+        position: relative;
+    }
+
+    .slide-image {
+        width: 300px;
+    }
+
+    .slide-description {
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        z-index: 2;
+        padding-top: 50px;
+    }
+    .slide-description .more-info{
+    	     font-size: 18px;
+    	    letter-spacing: 3.6px;
+    }
+
+    .slide-number {
+        font-size: 180px;
+        color: #fff;
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: 1;
+    }
+
+    .slide-params {
+        margin-top: auto;
+    }
+    .slider.smart-bracelete,.slider.drone{
+    	display: none;
+    }
+/**/
+
+
 .item-list ul{
 	display: -webkit-flex;
 	display: -moz-flex;
@@ -397,96 +502,34 @@ section.partners{
 .catalog-title .breadcrumbs li{
 	padding-left: 20px;
 }
-.filters-sorter{
-	display: -webkit-flex;
-	display: -moz-flex;
-	display: -ms-flex;
-	display: -o-flex;
-	display: flex;
-	justify-content: space-around;
-}
-.catalog-sorting{
-	display: -webkit-flex;
-	display: -moz-flex;
-	display: -ms-flex;
-	display: -o-flex;
-	display: flex;
+.content-block {
+  display: flex;
+  justify-content: space-between;
 }
 
-.catalog-sorting li:nth-child(1){
-	position: absolute;
-	top: 98px;
-	right: 505px;
-}
-.catalog-sorting li:nth-child(2){
-	position: absolute;
-	top: 98px;
-	right: 420px;
-}
-.catalog-sorting li:nth-child(3){
-	position: absolute;
-	top: 98px;
-	right: 270px;
-}
-.catalog-main{
-	position: relative;
-}
-.filter-sorter{
-   display: -webkit-flex;
-   display: -moz-flex;
-   display: -ms-flex;
-   display: -o-flex;
-   display: flex;
-   justify-content: space-around;
-   position: relative;
-}
-.filters-sorter .filter{
-   position: absolute;
-   left: 100px;
-}
-.filters-sorter .sorting{
-	position: absolute;
-	right: 590px;
-	top: 80px;
-}
-.catalog-sorting-slider{
-	display: -webkit-flex;
-	display: -moz-flex;
-	display: -ms-flex;
-	display: -o-flex;
-	display: flex;
-}
-.catalog-sorting-slider li:first-child{
-	position: absolute;
-	right: 50px;
-	top: 100px;
-}
-.catalog-sorting-slider li:last-child{
-	position: absolute;
-	right: 100px;
-	top: 100px;
-}
-.content-block{
-	display: -webkit-flex;
-	display: -moz-flex;
-	display: -ms-flex;
-	display: -o-flex;
-	display: flex;
-	justify-content: space-around;
-
-}
-.content-items{
-	display: -webkit-flex;
-	display: -moz-flex;
-	display: -ms-flex;
-	display: -o-flex;
-	display: flex;
-	flex-wrap: wrap-reverse;
-	flex-direction: row;
-	padding-left: 200px;
+.form-filter {
+  flex: 0 0 468px; // вместо 320px возьми ширину из макета
 }
 
-/*main-footer*/
+.catalog-body {
+  flex: 0 0 973px; // вместо 830рх возьми ширину из макета
+}
+
+.content-items {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.thing-item {
+  flex: 0 0 361px; // вместо 360px возьми ширину из макета. Горизонтальный промежуток в 40px между элементами будет за счёт того, что сумма ширин двух элементов в строке меньше ширины их родителя на 40px
+  margin-top: 40px; // вертикальный отступ между товарами
+}
+
+.thing-item:first-child,
+.thing-item:nth-child(2) {
+  margin-top: 0; // уберём вертикальный отступ для товаров в первой строке
+}
+
 .list-navigation, 
 .products-catalog{
 	font-size: 18px;
@@ -543,7 +586,7 @@ section.partners{
  .big-number{
  	font-size: 179px;
  	letter-spacing: 0.01em;
- 	color: #fff;
+ 	color: #000;
  }
  .more-info{
  	letter-spacing: 0.01em;
@@ -552,19 +595,60 @@ section.partners{
  	letter-spacing: 4px;
  	text-decoration: none;
  }
- .type-item-list a{
- 	
+ .type-item-list{
+ 	width: 1160px;
+ }
+ .type-item-list li{
+    text-align: center;
+    line-height: 10px;
+    width: 161px;
+    height: 161px;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    list-style-type: none;
+	background-color: #f7e296;
+ }
+ .type-item-list li a{
+ 	text-align: center;
+ 	vertical-align: middle;
  }
 .type-item-list p{
 	letter-spacing: 0.01em;
 	font-size: 18px;
 	color: #000;
 	line-height: 24px;
-
 }
-.type-item-list li{
-	list-style-type: none;
-	background-color: #f7e296;
+.type-item-list li svg{
+	padding-top: 43px;
+}
+.type-item-list li:nth-child(1) p{
+    padding-top: 70px;
+    padding-right: 35px;
+}
+.type-item-list li:nth-child(2) p{
+    padding-top: 10px;
+    padding-right: 45px;
+}
+.type-item-list li:nth-child(3) p{
+    padding-top: 40px;
+    padding-left: 0px;
+}
+.type-item-list li:nth-child(4) p{
+    padding-top: 65px;
+    padding-right: 60px;
+}
+.type-item-list li:nth-child(5) p{
+    padding-top: 35px;
+    padding-right: 35px;
+}
+.type-item-list li:nth-child(6) p{
+    padding-top: 60px;
+    padding-right: 35px;
 }
 .services{
 	background-color: #e5e5e5;
