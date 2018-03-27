@@ -14,17 +14,17 @@
       </a>
       <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
         <input class="search-form-field first-line" type="search" name="search" placeholder="Поиск по сайту">
-        <input type="submit first-line" name="submit" value="Найти">
+        <input type="submit" name="submit" value="Найти">
       </form>
       <div class="user-block">
-        <a class="enter first-line" href="login.html">Войти</a>
-        <a class="compare first-line" href="compare.html">Сравнить</a>
-        <a class="basket first-line" href="basket.html">Корзина</a>
+        <a class="enter first-line" href="login.html"><svg xmlns="http://www.w3.org/2000/svg" width="13" height="12" viewBox="0 0 13 12"><path fill="#272525" d="M.032 12h12.937c-.163-2.643-2.074-4.837-4.671-5.543a3.47 3.47 0 0 0 1.687-2.972 3.485 3.485 0 0 0-6.97 0c0 1.264.68 2.361 1.688 2.972C2.106 7.163.194 9.357.032 12z"/></svg>Войти</a>
+        <a class="compare first-line" href="compare.html"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10"><path d="M8 2h1.984v8H8zM0 3h1.984v7H0zM4 0h2v10H4z"/></svg>Сравнить</a>
+        <a class="basket first-line" href="basket.html"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12"><path d="M11.864 3.017a.429.429 0 0 0-.327-.154H9.225V4.09c0 .563-.484 1.022-1.08 1.022-.594 0-1.078-.458-1.078-1.022V2.863H4.909V4.09c0 .563-.485 1.022-1.08 1.022-.595 0-1.078-.458-1.078-1.022V2.863H.438a.43.43 0 0 0-.327.154.472.472 0 0 0-.108.358l.776 7.134c.015.806.642 1.455 1.411 1.455h7.595c.77 0 1.396-.649 1.411-1.455l.776-7.134a.476.476 0 0 0-.108-.358z"/><path d="M3.829 4.499c.239 0 .433-.184.433-.409V1.84c0-.632.672-1.022 1.295-1.022h1.079c.655 0 1.078.401 1.078 1.022v2.25c0 .225.194.409.431.409.239 0 .433-.184.433-.409V1.84C8.577.773 7.761 0 6.636 0H5.557c-1.19 0-2.159.826-2.159 1.84v2.25c0 .225.194.409.431.409z"/></svg>Корзина</a>
       </div>
        <nav class="main-nav">
         <ul class="main-catalog">
           <li>
-            <a class="index-catalog main-links1" href="catalog.html">Каталог товаров</a>
+            <a class="index-catalog main-links1" href="catalog.html">КАТАЛОГ ТОВАРОВ<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path fill="#272525" d="M16 7H9V0H7v7H0v2h7v7h2V9h7z"/></svg></a>
             <ul class="catalog-add">
               <li><a href="#">Виртуальная реальность</a></li>
               <li><a href="#">Фитнесс-браслеты</a></li>
@@ -34,9 +34,9 @@
               <li><a href="#">Экшн-камеры</a></li>
             </ul>
           </li>
-          <li><a class="main-links2" href="#">Доставка</a></li>
-          <li><a class="main-links3" href="#">Гарантия</a></li>
-          <li><a class="main-links4" href="#">Контакты</a></li>
+          <li><a class="main-links2" href="#">ДОСТАВКА</a></li>
+          <li><a class="main-links3" href="#">ГАРАНТИЯ</a></li>
+          <li><a class="main-links4" href="#">КОНТАКТЫ</a></li>
         </ul>
       </nav>
     </div>
@@ -46,10 +46,10 @@
    		<h1 class="main-title">Моноподы для селфи</h1>
    		<ul class="breadcrumbs">
    			<li>
-   				<a href="index.html">Главная</a>
+   				<a href="index.html">Главная<svg xmlns="http://www.w3.org/2000/svg" width="4" height="7" viewBox="0 0 4 7"><path d="M3.83 3.132L.861.144a.5.5 0 0 0-.713 0 .508.508 0 0 0 0 .718l2.611 2.629L.148 6.12a.51.51 0 0 0 0 .72.5.5 0 0 0 .713 0L3.83 3.852a.51.51 0 0 0 .147-.36.507.507 0 0 0-.147-.36z"/></svg></a>
    			</li>
    			<li>
-   				<a href="#">Каталог товаров</a>
+   				<a href="#">Каталог товаров<svg xmlns="http://www.w3.org/2000/svg" width="4" height="7" viewBox="0 0 4 7"><path d="M3.83 3.132L.861.144a.5.5 0 0 0-.713 0 .508.508 0 0 0 0 .718l2.611 2.629L.148 6.12a.51.51 0 0 0 0 .72.5.5 0 0 0 .713 0L3.83 3.852a.51.51 0 0 0 .147-.36.507.507 0 0 0-.147-.36z"/></svg></a>
    			</li>
    			<li>
    				Моноподы для селфи
@@ -58,28 +58,27 @@
    	</section>
 <div class="content-block">
   <div class="form-filter">
-    <!-- тут фильтр -->
     <h2 class="filter">ФИЛЬТР:</h2>
     <form action="https://echo.htmlacademy.ru" method="get" class="filter-for-user">
-          <fieldset class="price">
+          <div class="price">
             <legend>Стоимость</legend>
             <input type="range" name="price-range-input" id="price-range">
             <span>От 0</span>
             <span>До 5000</span>
-          </fieldset>
-          <fieldset class="color">
+          </div>
+          <div class="color">
             <legend>Цвет</legend>
             <input type="checkbox" name="color-input" id="color-black"> <label for="color-black">Черный</label>
             <input type="checkbox" name="color-input" id="color-white"> <label for="color-white">Белый</label>
             <input type="checkbox" name="color-input" id="color-blue">  <label for="color-blue">Синий</label>
             <input type="checkbox" name="color-input" id="color-red">   <label for="color-red">Красный</label>
             <input type="checkbox" name="color-input" id="color-pink">  <label for="color-pink">Розовый</label>
-          </fieldset>
-          <fieldset class="bluetooth">
+          </div>
+          <div class="bluetooth">
             <legend>Bluetooth</legend>
             <input type="radio" name="filter-radio-btn" id="btn-yes"  value="Есть"> <label for="btn-yes">Есть</label>
             <input type="radio" name="filter-radio-btn" id="btn-no"   value="Нет">   <label for="btn-no">Нет</label>
-          </fieldset>
+          </div>
           <button class="show btn" type="button">Показать</button>
     </form>
   </div>
@@ -149,19 +148,19 @@
 </div>
     
    </main>
-   	<footer class="main-footer">
-   	<section class="foot container">
-   		<div class="footer-left">
-   			<h2>DEVICE</h2>
-   			<p>Г.Москва,Ул.Строителей,15</p>
-   		</div>
-   		<div class="footer-center">
-   			<ul class="links-for-footer">
-   					<li><a href="#">Доставка</a></li>
-   					<li><a href="#">Гарантия</a></li>
-   					<li><a href="#">Контакты</a></li>
-   			</ul>
-   			<ul class="social-for-footer">  
+   	<footer class="main-footer container">
+    <section class="foot container">
+      <div class="footer-left">
+        <h2>DEVICE</h2>
+        <p>Г.Москва,Ул.Строителей,15</p>
+      </div>
+      <div class="footer-center">
+        <ul class="links-for-footer">
+            <li><a href="#">ДОСТАВКА</a></li>
+            <li><a href="#">ГАРАНТИЯ</a></li>
+            <li><a href="#">КОНТАКТЫ</a></li>
+        </ul>
+        <ul class="social-for-footer">  
             <li>
               <span class="visually-hidden">Facebook</span>
               <a href="#" class="social-btn facebook">
@@ -181,26 +180,26 @@
               </a>
             </li>
         </ul>
-   		</div>
-   		<div class="footer-right">
-   			<ul class="footer-for-user">
-   				<li class="footer-enter">
-   					<a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="13" height="12" viewBox="0 0 13 12"><path fill="#272525" d="M.032 12h12.937c-.163-2.643-2.074-4.837-4.671-5.543a3.47 3.47 0 0 0 1.687-2.972 3.485 3.485 0 0 0-6.97 0c0 1.264.68 2.361 1.688 2.972C2.106 7.163.194 9.357.032 12z"/></svg>Войти</a>
-   				</li>
-   				<li class="footer-compare">
-   					<a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10"><path d="M8 2h1.984v8H8zM0 3h1.984v7H0zM4 0h2v10H4z"/></svg>Сравнить</a>
-   				</li>
-   				<li class="footer-basket">
-   					<a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12"><path d="M11.864 3.017a.429.429 0 0 0-.327-.154H9.225V4.09c0 .563-.484 1.022-1.08 1.022-.594 0-1.078-.458-1.078-1.022V2.863H4.909V4.09c0 .563-.485 1.022-1.08 1.022-.595 0-1.078-.458-1.078-1.022V2.863H.438a.43.43 0 0 0-.327.154.472.472 0 0 0-.108.358l.776 7.134c.015.806.642 1.455 1.411 1.455h7.595c.77 0 1.396-.649 1.411-1.455l.776-7.134a.476.476 0 0 0-.108-.358z"/><path d="M3.829 4.499c.239 0 .433-.184.433-.409V1.84c0-.632.672-1.022 1.295-1.022h1.079c.655 0 1.078.401 1.078 1.022v2.25c0 .225.194.409.431.409.239 0 .433-.184.433-.409V1.84C8.577.773 7.761 0 6.636 0H5.557c-1.19 0-2.159.826-2.159 1.84v2.25c0 .225.194.409.431.409z"/></svg>Корзина</a>
-   				</li>
-   			</ul>
-   			<p>Тел.: +7 (495) 495-95-95</p>
-   		<a href="https://htmlacademy.ru/">
+      </div>
+      <div class="footer-right">
+        <ul class="footer-for-user">
+          <li class="footer-enter">
+            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="13" height="12" viewBox="0 0 13 12"><path fill="#272525" d="M.032 12h12.937c-.163-2.643-2.074-4.837-4.671-5.543a3.47 3.47 0 0 0 1.687-2.972 3.485 3.485 0 0 0-6.97 0c0 1.264.68 2.361 1.688 2.972C2.106 7.163.194 9.357.032 12z"/></svg>Войти</a>
+          </li>
+          <li class="footer-compare">
+            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10"><path d="M8 2h1.984v8H8zM0 3h1.984v7H0zM4 0h2v10H4z"/></svg>Сравнить</a>
+          </li>
+          <li class="footer-basket">
+            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12"><path d="M11.864 3.017a.429.429 0 0 0-.327-.154H9.225V4.09c0 .563-.484 1.022-1.08 1.022-.594 0-1.078-.458-1.078-1.022V2.863H4.909V4.09c0 .563-.485 1.022-1.08 1.022-.595 0-1.078-.458-1.078-1.022V2.863H.438a.43.43 0 0 0-.327.154.472.472 0 0 0-.108.358l.776 7.134c.015.806.642 1.455 1.411 1.455h7.595c.77 0 1.396-.649 1.411-1.455l.776-7.134a.476.476 0 0 0-.108-.358z"/><path d="M3.829 4.499c.239 0 .433-.184.433-.409V1.84c0-.632.672-1.022 1.295-1.022h1.079c.655 0 1.078.401 1.078 1.022v2.25c0 .225.194.409.431.409.239 0 .433-.184.433-.409V1.84C8.577.773 7.761 0 6.636 0H5.557c-1.19 0-2.159.826-2.159 1.84v2.25c0 .225.194.409.431.409z"/></svg>Корзина</a>
+          </li>
+        </ul>
+        <p>Тел.: +7 (495) 495-95-95</p>
+      <a href="https://htmlacademy.ru/" class="htmlacademy-mini-logo">
         <span class="visually-hidden">Logo htmlacademy</span>
         <svg  xmlns="http://www.w3.org/2000/svg" width="26.943" height="34.09" viewBox="0 0 26.943 34.09"><path fill="#FFC600" d="M13.62.017L13.472 0 0 1.412v24.661l13.473 8.017 13.43-7.99.042-.025V1.412L13.62.017zm11.399 12.11L13.495 5.334l-.001-.104-.087.05-.088-.056v.109L1.925 12.118V3.147l11.548-1.212L25.02 3.147v8.98zm-11.614-5.34L24.923 13.5l-4.479 2.64-7.093-4.221-.014 1.415 5.904 3.513-.86.507-5.03-2.992-.014 1.415 3.827 2.275-.782.523-3.031-1.787-.014 1.413 1.853 1.091-1.8 1.081-11.356-6.751 11.371-6.835zm-11.48 8.34l11.411 6.791.016 1.044-7.942-4.728-.015 1.416 7.979 4.795.018 1.076-7.973-4.74-.013 1.414 8.021 4.822.046.025 8.143-4.872-.011-5.177 3.415-2.036v10.021L13.472 31.85 1.925 24.979v-9.852z"/></svg>
       </a>
-   		</div>
-   	</section>
-   </footer>  
+      </div>
+    </section>
+   </footer>
 </body>
 </html>
