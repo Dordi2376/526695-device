@@ -9,7 +9,7 @@
 <body>
 	 <header class="main-header container">
     <div class="center clearfix">
-      <a class="logo">
+      <a class="logo" href="file:///C:/Users/vdm-6/Documents/GitHub/526695-device/index.html">
           DEVICE
       </a>
       <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
@@ -56,98 +56,104 @@
    			</li>
    		</ul>
    	</section>
-<div class="content-block">
-  <div class="form-filter">
-    <h2 class="filter">ФИЛЬТР:</h2>
+         <div class="catalog container1">
+    <div class="catalog-column-left">
+        <div class="catalog-column-wrapper">
+            <div class="catalog-column-header">Фильтр:</div>
+            <div class="catalog-filter">
+                <div class="form-filter">
     <form action="https://echo.htmlacademy.ru" method="get" class="filter-for-user">
           <div class="price">
             <legend>Стоимость</legend>
-            <input type="range" name="price-range-input" id="price-range">
+           <div class="range"></div>
+          <div class="from-to">
             <span>От 0</span>
             <span>До 5000</span>
           </div>
+            <div class="toggle toggle-min"></div>
+            <div class="toggle toggle-max"></div>
+          </div>
           <div class="color">
             <legend>Цвет</legend>
-            <input type="checkbox" name="color-input" id="color-black"> <label for="color-black">Черный</label>
-            <input type="checkbox" name="color-input" id="color-white"> <label for="color-white">Белый</label>
-            <input type="checkbox" name="color-input" id="color-blue">  <label for="color-blue">Синий</label>
-            <input type="checkbox" name="color-input" id="color-red">   <label for="color-red">Красный</label>
-            <input type="checkbox" name="color-input" id="color-pink">  <label for="color-pink">Розовый</label>
+            <div><input type="checkbox" name="color-input" id="color-black"> <label for="color-black">Черный</label></div>
+            <div><input type="checkbox" name="color-input" id="color-white"> <label for="color-white">Белый</label></div>
+            <div><input type="checkbox" name="color-input" id="color-blue">  <label for="color-blue">Синий</label></div>
+            <div><input type="checkbox" name="color-input" id="color-red">   <label for="color-red">Красный</label></div>
+            <div><input type="checkbox" name="color-input" id="color-pink">  <label for="color-pink">Розовый</label></div>
           </div>
           <div class="bluetooth">
             <legend>Bluetooth</legend>
-            <input type="radio" name="filter-radio-btn" id="btn-yes"  value="Есть"> <label for="btn-yes">Есть</label>
-            <input type="radio" name="filter-radio-btn" id="btn-no"   value="Нет">   <label for="btn-no">Нет</label>
+            <div><input type="radio" name="filter-radio-btn" id="btn-yes"  value="Есть"> <label for="btn-yes">Есть</label></div>
+            <div><input type="radio" name="filter-radio-btn" id="btn-no"   value="Нет">   <label for="btn-no">Нет</label></div>
           </div>
           <button class="show btn" type="button">Показать</button>
     </form>
   </div>
-  <div class="catalog-body"> 
-    <div class="main-elements-nav">
-      <h2 class="sorting">СОРТИРОВКА:</h2>
-      <ul class="catalog-sorting">
-        <li>
-          <span class="sorting-inside price">По цене</span>
-        </li>
-          <li>
-            <a href="#" class="sorting-inside type">По типу</a>
-          </li>
-          <li>
-            <a href="#" class="sorting-inside popular"> По популярности</a>
-          </li>
-        </ul>
-        <ul class="catalog-sorting-slider">
-          <li><a href="#" class="up btn"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 0L0 10h11z"/></svg></a></li>
-          <li><a href="#" class="down btn"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 10L0 0h11"/></svg></a></li>
-        </ul>
+            </div>
+        </div>
     </div>
-    <div class="content-items">
-     <div class="thing-item">
-               <img src="img/selfie-stick1.png" alt="Любительская селфи палка" width="360" height="380">
-               <button class="in-basket" type="button">В корзину</button>
-               <button type="button" class="upload-to-compair">Добавить к сравнению</button>
-               <a href="#" class="thing-name">Любительская селфи-палка</a>
-               <span class="thing-price">500руб.</span>
-             </div>
-
-
-             <div class="thing-item">
-              <img src="img/selfie-stick2.png" alt="Профессиональная селфи палка" width="360" height="380">
-              <button class="in-basket" type="button">В корзину</button>
-              <button type="button" class="upload-to-compair">Добавить к сравнению</button>
-              <a href="#" class="thing-name">Профессиональная селфи-палка</a>
-              <span class="thing-price">1500руб.</span>
-             </div>
-
-             <div class="thing-item">
-              <img src="img/selfie-stick3.png" alt="Непотопляемая селфи-палка" width="360" height="380">
-              <button class="in-basket" type="button">В корзину</button>
-              <button type="button" class="upload-to-compair">Добавить к сравнению</button>
-              <a href="#" class="thing-name">Непотопляемая селфи-палка</a>
-              <span class="thing-price">2500руб.</span>
-             </div>
-
-             <div class="thing-item new">
-              <img src="img/selfie-stick4.png" alt="Селфи палка Следуй за мной" width="360" height="380">
-              <button class="in-basket" type="button">В корзину</button>
-              <button type="button" class="upload-to-compair">Добавить к сравнению</button>
-              <a href="#" class="thing-name">Селфи палка Следуй за мной</a>
-              <span class="thing-price">4900руб.</span>
-             </div>
-      </div>
+    <div class="catalog-column-right">
+        <div class="catalog-column-wrapper">
+            <div class="catalog-column-header">Сортировка:
+                 <div class="sorting-thing-text">По цене</div>
+                 <div class="sorting-thing-text">По типу</div>
+                 <div class="sorting-thing-text">По популярности</div>
+                 <a href="#" class="sorting-thing"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 0L0 10h11z"/></svg></a>
+                 <a href="#" class="sorting-thing"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 10L0 0h11"/></svg></a>
+            </div>
+            <div class="catalog-items">
+                <div class="catalog-item">
+                    <div class="catalog-item-image-wrapper">
+                        <img src="img/selfie-stick1.png" alt="Любительская селфи палка" width="360" height="380">
+                        <a href="#"><button class="in-basket" type="button">В корзину</button></a>
+                        <a href="#"><button type="submit" class="upload-to-compair">Добавить к сравнению</button></a>
+                    </div>
+                    <a href="#"><p class="catalog-item-info">Любительская селфи-палка</p></a>
+                    <span class="cost">500 руб.</span>
+                </div>
+                <div class="catalog-item">
+                    <div class="catalog-item-image-wrapper">
+                        <img src="img/selfie-stick2.png" alt="Профессиональная селфи палка" width="360" height="380">
+                        <button class="in-basket" type="button">В корзину</button>
+                        <button type="button" class="upload-to-compair">Добавить к сравнению</button>
+                    </div>
+                    <a href="#"><p class="catalog-item-info">Профессиональная селфи-палка</p></a>
+                    <span class="cost">500 руб.</span>
+                </div>
+                <div class="catalog-item">
+                    <div class="catalog-item-image-wrapper">
+                        <img src="img/selfie-stick3.png" alt="Непотопляемая селфи-палка" width="360" height="380">
+                        <button class="in-basket" type="button">В корзину</button>
+                        <button type="button" class="upload-to-compair">Добавить к сравнению</button>
+                    </div>
+                    <a href="#"><p class="catalog-item-info">Непотопляемая селфи-палка</p></a>
+                    <span class="cost">500 руб.</span>
+                </div>
+                <div class="catalog-item">
+                    <div class="catalog-item-image-wrapper">
+                        <img src="img/selfie-stick4.png" alt="Селфи палка Следуй за мной" width="360" height="380">
+                        <button class="in-basket" type="button">В корзину</button>
+                        <button type="button" class="upload-to-compair">Добавить к сравнению</button>
+                    </div>
+                    <a href="#"><p class="catalog-item-info">Селфи-палка Следуй за мной</p></a>
+                    <span class="cost">500 руб.</span>
+                </div>
+            </div>
             <div class="main-elements-navigation">
                    <ul class="elements-slider">
                     <li class="back-btn"><a href="#">Назад</a></li>
-                    <li><span>1</span></li>
-                    <li><a href="#">2</a></li>
-                    <li><a href="#">3</a></li>
+                  <div class="num">
+                    <li><span class="numeral">1</span></li>
+                    <li><a href="#" class="numeral">2</a></li>
+                    <li><a href="#" class="numeral">3</a></li>
+                  </div>
                     <li class="next-btn"><a href="#">Вперед</a></li>
                    </ul>
             </div>
-      </div>
+        </div>
+    </div>
 </div>
-    
-   </main>
+  </main>
    	<footer class="main-footer container">
     <section class="foot container">
       <div class="footer-left">
