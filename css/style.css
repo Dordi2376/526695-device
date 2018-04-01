@@ -158,7 +158,7 @@ a {
   cursor: pointer;
 }
 
-.search-form input[type="submit"] {
+.search-form input[type="submit"]{
   display: none;
   width: 85px;
   min-height: 49px;
@@ -166,12 +166,13 @@ a {
   background-color: #f7e296;
   border: 2px solid #000;
   cursor: pointer;
-  text-align: bottom;
-  vertical-align: bottom;
+  position: absolute;
+  right: 680px;
+  top: 20px;
 }
-.search-form input[type="search"]:hover:focus .search-form input[type="submit"]{
+.search-form input[type="search"]:hover + input[type="submit"],
+.search-form input[type="search"]:focus + input[type="submit"]{
   display: block;
-  background-color: #000;
 }
 
 .user-block {
@@ -268,10 +269,74 @@ a {
   font-size: 18px;
   letter-spacing: .2em;
 }
+.main-links1:hover .catalog-add{
+	display: block;
+	z-index: 1;
+}
 
 .catalog-add {
-  display: none;
+  display: noe;
+  top: 20px;
+  min-height: 144px;
+  font-size: 15px;
+  z-index: 6;
+  width: 640px;
+  outline: 1px solid black;
+  padding-top: 22px;
+  color: #000;
+  list-style-type: none;
+  font-family: "Open Sans Light", "Arial", sans-serif;
+ }
+.catalog-add li a{
+	padding-left: 15px;
 }
+.catalog-add .first-text-line{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	white-space: nowrap;
+}
+.catalog-add .first-text-line li a{
+	padding-left: 30px;
+}
+.catalog-add .second-text-line{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	margin-left: -35px;
+	padding-top: 20px;
+}
+.catalog-add .second-text-line li a{
+	padding-left: 60px;
+}
+.catalog-add .third-text-line{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+}
+
+.catalog-add, .catalog-add::before{
+  position: absolute;
+  background-color: #f7e296;
+  top: 155px;
+  left: 0px;
+}
+.catalog-add::before{
+	content: "";
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    width: 1160px;
+    height: 100%;
+    padding-top: 0;
+}
+
 
 .main-links2 {
   position: absolute;

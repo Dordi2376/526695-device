@@ -12,10 +12,10 @@
       <a class="logo">
           DEVICE
       </a>
-      <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
+      <div class="search-form" action="https://echo.htmlacademy.ru" method="post">
         <input class="search-form-field first-line" type="search" name="search" placeholder="Поиск по сайту">
         <input type="submit" name="submit" value="Найти">
-      </form>
+      </div>
       <div class="user-block">
         <a class="enter first-line" href="login.html"><svg xmlns="http://www.w3.org/2000/svg" width="13" height="12" viewBox="0 0 13 12"><path fill="#272525" d="M.032 12h12.937c-.163-2.643-2.074-4.837-4.671-5.543a3.47 3.47 0 0 0 1.687-2.972 3.485 3.485 0 0 0-6.97 0c0 1.264.68 2.361 1.688 2.972C2.106 7.163.194 9.357.032 12z"/></svg>Войти</a>
         <a class="compare first-line" href="compare.html"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10"><path d="M8 2h1.984v8H8zM0 3h1.984v7H0zM4 0h2v10H4z"/></svg>Сравнить</a>
@@ -26,11 +26,13 @@
           <li>
             <a class="index-catalog main-links1" href="catalog.html">КАТАЛОГ ТОВАРОВ<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path fill="#272525" d="M16 7H9V0H7v7H0v2h7v7h2V9h7z"/></svg></a>
             <ul class="catalog-add">
-              <li><a href="#">Виртуальная реальность</a></li>
+            <div class="first-text-line"><li><a href="#">Виртуальная реальность</a></li>
               <li><a href="#">Фитнесс-браслеты</a></li>
               <li><a href="#">Квадрокоптеры</a></li>
-              <li><a href="#">Моноподы для селфи</a></li>
+            </div>
+            <div class="second-text-line"><li><a href="#">Моноподы для селфи</a></li>
               <li><a href="#">Умные часы</a></li>
+            </div>
               <li><a href="#">Экшн-камеры</a></li>
             </ul>
           </li>
@@ -276,7 +278,7 @@
    </main>
    <footer class="main-footer">
      <section class="foot container">
-       <div class="footer-top container">
+       <div class="footer-top">
          <h2>DEVICE</h2>
 
          <ul class="footer-for-user">
