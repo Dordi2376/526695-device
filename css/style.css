@@ -139,7 +139,6 @@ a {
 
 .search-form {
   padding-left: 83px;
-  outline: 1px solid black;
   height: 45px;
 }
 
@@ -171,7 +170,7 @@ a {
   vertical-align: bottom;
 }
 .search-form input[type="search"]:hover:focus .search-form input[type="submit"]{
-  display: static;
+  display: block;
   background-color: #000;
 }
 
